@@ -30,6 +30,7 @@ func main() {
 
     // The builtin `delete` removes key/value pairs from
     // a map.
+    //delete(m, "k2")
     delete(m, "k2")
     fmt.Println("map:", m)
 
