@@ -28,6 +28,20 @@ func main() {
     // pairs when called on a map.
     fmt.Println("len:", len(m))
 
+
+
+
+
+
+    _,ok := m["k1"]
+    if ok { // 找到了
+        fmt.Println("ok")
+        fmt.Println("k1:",m["k1"])
+    }else{
+        fmt.Println("not ok")
+    }
+
+
     // The builtin `delete` removes key/value pairs from
     // a map.
     //delete(m, "k2")
