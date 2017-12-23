@@ -1,6 +1,6 @@
-// _range_ iterates over elements in a variety of data
-// structures. Let's see how to use `range` with some
-// of the data structures we've already learned.
+//range函数是个神奇而有趣的内置函数，你可以使用它来遍历数组，切片和字典。
+//当用于遍历数组和切片的时候，range函数返回索引和元素；
+//当用于遍历字典的时候，range函数返回字典的键和值。
 
 package main
 
@@ -8,8 +8,8 @@ import "fmt"
 
 func main() {
 
-    // Here we use `range` to sum the numbers in a slice.
-    // Arrays work like this too.
+    // 这里我们使用range来计算一个切片的所有元素和
+    // 这种方法对数组也适用
     nums := []int{2, 3, 4}
     sum := 0
     for _, num := range nums {
@@ -17,18 +17,16 @@ func main() {
     }
     fmt.Println("sum:", sum)
 
-    // `range` on arrays and slices provides both the
-    // index and value for each entry. Above we didn't
-    // need the index, so we ignored it with the
-    // blank identifier `_`. Sometimes we actually want
-    // the indexes though.
+    // range 用来遍历数组和切片的时候返回索引和元素值
+    // 如果我们不要关心索引可以使用一个下划线(_)来忽略这个返回值
+    // 当然我们有的时候也需要这个索引
     for i, num := range nums {
         if num == 3 {
             fmt.Println("index:", i)
         }
     }
 
-    // `range` on map iterates over key/value pairs.
+    // 使用range来遍历字典的时候，返回键值对。
     kvs := map[string]string{"a": "apple", "b": "banana"}
     for k, v := range kvs {
         fmt.Printf("%s -> %s\n", k, v)
@@ -39,9 +37,9 @@ func main() {
         fmt.Println("key:", k)
     }
 
-    // `range` on strings iterates over Unicode code
-    // points. The first value is the starting byte index
-    // of the `rune` and the second the `rune` itself.
+    // range函数用来遍历字符串时，返回Unicode代码点。
+    // 第一个返回值是每个字符的起始字节的索引，第二个是字符代码点，
+    // 因为Go的字符串是由字节组成的，多个字节组成一个rune类型字符。
     for i, c := range "go" {
         fmt.Println(i, c)
     }
