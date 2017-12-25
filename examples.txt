@@ -14,10 +14,11 @@ Multiple Return Values
 Variadic Functions
 闭包 Closures
 递归 Recursion
-Pointers
+指针 Pointers
 Structs
 Methods
 Interfaces
+
 Errors
 Goroutines
 Channels
