@@ -3,7 +3,11 @@
 
 package main
 
+import "aaa"
 import "fmt"
+
+
+
 
 // Here's a function that takes two `int`s and returns
 // their sum as an `int`.
@@ -31,5 +35,12 @@ func main() {
     fmt.Println("1+2 =", res)
 
     res = plusPlus(1, 2, 3)
+    fmt.Println("1+2+3 =", res)
+
+
+    res = aaa.PlusPlus1(1, 2, 3)
+    fmt.Println("1+2+3 =", res)
+
+    res = aaa.PlusPlus1(1, 2, 3)
     fmt.Println("1+2+3 =", res)
 }
