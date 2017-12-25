@@ -12,9 +12,8 @@ Range
 Functions
 Multiple Return Values
 Variadic Functions
-Closures
-
-Recursion
+闭包 Closures
+递归 Recursion
 Pointers
 Structs
 Methods

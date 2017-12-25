@@ -17,4 +17,5 @@ func fact(n int) int {
 
 func main() {
     fmt.Println(fact(7))
+    // 7*6*5*4*3*2
 }
