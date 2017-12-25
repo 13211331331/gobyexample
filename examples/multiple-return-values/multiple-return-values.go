@@ -22,6 +22,8 @@ func main() {
 
     // If you only want a subset of the returned values,
     // use the blank identifier `_`.
+    //如果调用方调用了一个具有多返回值的方法，但是却不想关心其中的某个返回值，可以简单
+    //地用一个下划线“_”来跳过这个返回值，
     _, c := vals()
     fmt.Println(c)
 }

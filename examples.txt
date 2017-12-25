@@ -9,9 +9,9 @@ Arrays
 Slices
 Maps
 Range
-
 Functions
 Multiple Return Values
+
 Variadic Functions
 Closures
 Recursion
@@ -100,3 +100,8 @@ uint64 8 0 ~ 18 446 744 073 709 551 615
 int 平台相关 平台相关
 uint 平台相关 平台相关
 uintptr 同指针 在32位平台下为4字节，64位平台下为8字节
+
+
+因此需要先牢记这样的规则：小写字母开头的函数只在本包内可见，大写字母开头的函数才
+能被其他包使用。
+这个规则也适用于类型和变量的可见性。
