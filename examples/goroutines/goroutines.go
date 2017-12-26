@@ -10,7 +10,19 @@ func f(from string) {
     }
 }
 
+
+func Add(x, y int) {
+    z := x + y
+    fmt.Println(z)
+}
+
+
 func main() {
+
+ /*   for i := 0; i < 10; i++ {
+        go Add(i, i)
+    }*/
+
 
     // Suppose we have a function call `f(s)`. Here's how
     // we'd call that in the usual way, running it
