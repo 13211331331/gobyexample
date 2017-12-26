@@ -1,6 +1,6 @@
 // When using channels as function parameters, you can
-// specify if a channel is meant to only send or receive
-// values. This specificity increases the type-safety of
+// specify（指定） if a channel is meant to only send or receive
+// values. This specificity（特性） increases（增加） the type-safety（安全类型） of
 // the program.
 
 package main
