@@ -1,7 +1,7 @@
 // _[Rate limiting](http://en.wikipedia.org/wiki/Rate_limiting)_
 // is an important mechanism for controlling resource
-// utilization and maintaining quality of service. Go
-// elegantly supports rate limiting with goroutines,
+// utilization（利用） and maintaining（维护） quality（质量） of service. Go
+// elegantly（优雅的） supports rate limiting with goroutines,
 // channels, and [tickers](tickers).
 
 package main
