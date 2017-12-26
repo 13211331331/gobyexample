@@ -19,9 +19,14 @@ func main() {
     // values into the channel without a corresponding
     // concurrent receive.
     messages <- "buffered"
+    fmt.Println(<-messages)
     messages <- "channel"
 
     // Later we can receive these two values as usual.
+
+    fmt.Println(<-messages)
+    messages <- "channel1"
+    messages <- "channel2"
     fmt.Println(<-messages)
     fmt.Println(<-messages)
 }

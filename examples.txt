@@ -21,9 +21,8 @@ Interfaces
 Errors
 廉价的thread  Goroutines
 Channels
-
-Channel Buffering
-Channel Synchronization
+缓冲 Channel Buffering
+同步 Channel Synchronization
 Channel Directions
 Select
 Timeouts
