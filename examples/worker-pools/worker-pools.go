@@ -1,4 +1,4 @@
-// In this example we'll look at how to implement
+// In this example we'll look at how to implement（实施）
 // a _worker pool_ using goroutines and channels.
 
 package main
