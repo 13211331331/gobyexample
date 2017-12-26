@@ -1,4 +1,4 @@
-// Go offers extensive support for times and durations;
+// Go offers extensive(广泛的) support for times and durations(持续时间);
 // here are some examples.
 
 package main
