@@ -37,6 +37,8 @@ type argError struct {
     prob string
 }
 
+//如果这样的话，编译器又怎能知道PathError可以当一个error来传递呢？关键在于下面的
+//代码实现了Error()方法：
 func (e *argError) Error() string {
     return fmt.Sprintf("%d - %s", e.arg, e.prob)
 }
