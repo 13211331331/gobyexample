@@ -1,5 +1,5 @@
-// _Defer_ is used to ensure that a function call is
-// performed later in a program's execution, usually for
+// _Defer_ is used to ensure(确保) that a function call is
+// performed(执行) later in a program's execution, usually for
 // purposes of cleanup. `defer` is often used where e.g.
 // `ensure` and `finally` would be used in other languages.
 
@@ -18,7 +18,7 @@ func main() {
     // with `closeFile`. This will be executed at the end
     // of the enclosing function (`main`), after
     // `writeFile` has finished.
-    f := createFile("/tmp/defer.txt")
+    f := createFile("d:/defer.txt")
     defer closeFile(f)
     writeFile(f)
 }
