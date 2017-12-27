@@ -1,4 +1,4 @@
-// The primary mechanism for managing state in Go is
+// The primary（初级的） mechanism（机制） for managing state in Go is
 // communication over channels. We saw this for example
 // with [worker pools](worker-pools). There are a few other
 // options for managing state though. Here we'll
@@ -17,8 +17,8 @@ func main() {
     // (always-positive) counter.
     var ops uint64 = 0
 
-    // To simulate concurrent updates, we'll start 50
-    // goroutines that each increment the counter about
+    // To simulate(模拟) concurrent(同时发生的) updates, we'll start 50
+    // goroutines that each increment(增量) the counter(计数器) about
     // once a millisecond.
     for i := 0; i < 50; i++ {
         go func() {
@@ -45,5 +45,13 @@ func main() {
     // function the memory address `&ops` from which to
     // fetch the value.
     opsFinal := atomic.LoadUint64(&ops)
+    fmt.Println("ops:", opsFinal)
+
+    time.Sleep(time.Second)
+    opsFinal = atomic.LoadUint64(&ops)
+    fmt.Println("ops:", opsFinal)
+
+    time.Sleep(time.Second)
+    opsFinal = atomic.LoadUint64(&ops)
     fmt.Println("ops:", opsFinal)
 }

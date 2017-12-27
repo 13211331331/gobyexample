@@ -31,7 +31,7 @@ func main() {
     // 1 request every 200 milliseconds.
     for req := range requests {
         <-limiter
-        fmt.Println("request", req, time.Now())
+        fmt.Println("1request", req, time.Now())
     }
 
     // We may want to allow short bursts of requests in
