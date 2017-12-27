@@ -9,7 +9,7 @@ import "sort"
 
 func main() {
 
-    // Sort methods are specific to the builtin type;
+    // Sort methods are specific(具体的) to the builtin type;
     // here's an example for strings. Note that sorting is
     // in-place, so it changes the given slice and doesn't
     // return a new one.
