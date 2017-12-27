@@ -43,7 +43,7 @@ Defer
 Collection Functions
 String Functions
 String Formatting
-Regular Expressions
+正则表达式 Regular Expressions
 JSON
 Time
 Epoch
