@@ -89,10 +89,10 @@ func main() {
 
     fmt.Println(Index(strs, "pear"))
 
-    fmt.Println(Include(strs, "grape"))
+    fmt.Println("Include:" ,Include(strs, "grape"))
 
     fmt.Println(Any(strs, func(v string) bool {
-        return strings.HasPrefix(v, "p")
+        return strings.HasPrefix(v, "a")
     }))
 
     fmt.Println(All(strs, func(v string) bool {

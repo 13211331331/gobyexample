@@ -41,6 +41,7 @@ Sorting by Functions
 Panic
 Defer
 Collection Functions
+
 String Functions
 String Formatting
 Regular Expressions
