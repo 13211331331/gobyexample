@@ -46,11 +46,12 @@ String Formatting
 正则表达式 Regular Expressions
 JSON
 Time
-Epoch
+Epoch 时期;纪元;世;新时代
 Time Formatting / Parsing
 Random Numbers
 Number Parsing
 URL Parsing
+
 SHA1 Hashes
 Base64 Encoding
 Reading Files

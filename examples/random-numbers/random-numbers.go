@@ -13,6 +13,8 @@ func main() {
     // For example, `rand.Intn` returns a random `int` n,
     // `0 <= n < 100`.
     fmt.Print(rand.Intn(100), ",")
+    fmt.Print(rand.Intn(100), ",")
+    fmt.Print(rand.Intn(100), ",")
     fmt.Print(rand.Intn(100))
     fmt.Println()
 
@@ -36,7 +38,7 @@ func main() {
 
     // Call the resulting `rand.Rand` just like the
     // functions on the `rand` package.
-    fmt.Print(r1.Intn(100), ",")
+    fmt.Print(r1.Intn(100), ",---2222222222----")
     fmt.Print(r1.Intn(100))
     fmt.Println()
 
