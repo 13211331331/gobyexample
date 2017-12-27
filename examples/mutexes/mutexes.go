@@ -1,7 +1,7 @@
 // In the previous example we saw how to manage simple
 // counter state using [atomic operations](atomic-counters).
 // For more complex state we can use a _[mutex](http://en.wikipedia.org/wiki/Mutual_exclusion)_
-// to safely access data across multiple goroutines.
+// to safely(安全地) access data across multiple goroutines.
 
 package main
 
@@ -79,6 +79,12 @@ func main() {
     fmt.Println("writeOps:", writeOpsFinal)
 
     // With a final lock of `state`, show how it ended up.
+    mutex.Lock()
+    fmt.Println("state:", state)
+    mutex.Unlock()
+
+    time.Sleep(time.Second)
+
     mutex.Lock()
     fmt.Println("state:", state)
     mutex.Unlock()
