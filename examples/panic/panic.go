@@ -1,11 +1,14 @@
-// A `panic` typically means something went unexpectedly
+// A `panic` typically(通常) means something went unexpectedly(意外地)
 // wrong. Mostly we use it to fail fast on errors that
 // shouldn't occur during normal operation, or that we
-// aren't prepared to handle gracefully.
+// aren't prepared(事先准备好的;愿意的;期望的) to handle gracefully(优雅).
 
 package main
 
-import "os"
+import (
+    "os"
+)
+
 
 func main() {
 
@@ -18,6 +21,7 @@ func main() {
     // returns an error value that we don't know how to
     // (or want to) handle. Here's an example of
     // `panic`king if we get an unexpected error when creating a new file.
+
     _, err := os.Create("/tmp/file")
     if err != nil {
         panic(err)
