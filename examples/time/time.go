@@ -11,7 +11,7 @@ func main() {
 
     // We'll start by getting the current time.
     now := time.Now()
-    p(now)
+    p(now.String())
 
     // You can build a `time` struct by providing the
     // year, month, day, etc. Times are always associated
